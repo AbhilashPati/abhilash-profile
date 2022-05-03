@@ -1,0 +1,13 @@
+<section class="publications">
+  <h1 class="heading gradient-text"> {{editBoards?.headingGradientText}} </h1>
+  <div class="margin-top-6">
+    <div class="feature-box-small"
+         *ngFor="let editBoard of editBoards?.editBoardList">
+      <div class="feature-box-small--content"> {{ editBoard.publicationDetails }}</div>
+      <a href="{{ editBoard.externalLink }}"
+         target="_blank"
+         class="btn--link align-right-bottom">{{ editBoard.linkText }}
+      </a>
+    </div>
+  </div>
+</section>

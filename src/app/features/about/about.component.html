@@ -1,0 +1,23 @@
+<section class="about-container">
+  <h1 class="heading"><span class="gradient-text">{{about?.headingGradientText}}</span> {{about?.headingNormalText}}
+  </h1>
+  <div class="about">
+    <h3>{{about?.title}}</h3>
+    <h1>{{about?.titleNormalText}} <span class="gradient-text">{{about?.titleGradientText}}</span></h1>
+    <p>
+      {{about?.paragraph1}}
+    </p>
+    <p>
+      {{about?.paragraph2}}
+    </p>
+    <ul class="research-link">
+      <li *ngFor="let link of about?.links">
+        <a href="{{link?.url}}"
+           target="_blank"
+           class="btn--link">{{link?.name}}
+          <span><i class="fas fa-arrow-right"></i></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>

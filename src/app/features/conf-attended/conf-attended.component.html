@@ -1,0 +1,13 @@
+<section class="publications">
+  <h1 class="heading gradient-text">{{conferences?.headingGradientText}} </h1>
+  <div class="margin-top-6">
+    <div class="feature-box-small"
+         *ngFor="let conf of conferences?.confList">
+      <div class="feature-box-small--content"> {{ conf?.confDetails}}</div>
+      <a href="{{ conf?.externalLink}}"
+         target="_blank"
+         class="btn--link align-right-bottom">{{ conf?.linkText}}
+      </a>
+    </div>
+  </div>
+</section>
